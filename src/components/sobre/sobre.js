@@ -34,7 +34,11 @@ const Title = styled.p`
 const Text = styled.p`
     font-size: 24px;
     color: #FFFAFA;
+<<<<<<< HEAD
     text-align: justify;
+=======
+    text-align: right;
+>>>>>>> b6adbab41ae2694f937d9e9e60492f3bca44441a
 `;
 
 export function Sobre(){
