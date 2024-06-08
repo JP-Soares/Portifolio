@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components"
 import './menu.css'
 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 const Ul = styled.ul`
     list-style: none;
     display: flex;
     justify-content: space-around;
-    padding: 0;
+    padding: 0 20px; /* Adiciona um preenchimento horizontal uniforme */
 `;
 
 const Li = styled.li`
@@ -15,21 +17,21 @@ const Li = styled.li`
         // border-bottom: 3px solid #DE70F0;
         border-bottom: 3px solid #FFFAFA;;
         border-radius: 5px;
-        transition: 0.3s;
+        transition: all 0.3s ease;
+        cursor: pointer; 
     }
 `;
 
-const Link = styled.a`
+const Link = styled(ScrollLink)`
     text-decoration: none;
 
 `;
 
 const Nav = styled.nav`
     background-color: #A540C8;
-    position: fixed;
-    width: 70vw;
+    position: absolute;
+    width: 100vw;
     top: 0;
-    margin-left: 13vw;
     z-index: 999;
     padding: 0;
     border-radius: 10px;
@@ -40,7 +42,9 @@ export function Menu(){
         <Nav>
             <Ul>
                 <Li>
-                    <Link href="#">Sobre Mim</Link>
+                    <Link to="sobre"
+                        smooth={true}
+                        duration={800}>Sobre Mim</Link>
                 </Li>
                 <Li>
                     <Link href="#">Meus Projetos</Link>

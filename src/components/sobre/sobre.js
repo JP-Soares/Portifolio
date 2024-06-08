@@ -7,7 +7,7 @@ const ContainerText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 30vw;
+    margin-left: 20vw;
     width: 30vw;
     padding: 0;
 `;
@@ -32,28 +32,24 @@ const Title = styled.p`
 `;
 
 const Text = styled.p`
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFAFA;
-<<<<<<< HEAD
     text-align: justify;
-=======
-    text-align: right;
->>>>>>> b6adbab41ae2694f937d9e9e60492f3bca44441a
+    text-align: left;
 `;
 
 export function Sobre(){
     return(
-        <ContainerSobre>
+        <ContainerSobre id="sobre">
             <Img2 src={eugenius}></Img2>
             <ContainerText>
                 <Title>Sobre:</Title>
-                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-                    qui officia deserunt mollit anim id est laborum.</Text>
+                <Text>Meu nome é João Pedro, e sou um entusiasta da tecnologia com formação em técnico em análise de sistemas, 
+                    atualmente cursando engenharia de software. Ao longo da minha trajetória, tive o privilégio de participar de 
+                    renomadas feiras tecnológicas, alcançando a posição de finalista por dois anos consecutivos na GeniusCon, 
+                    nos anos de 2022 e 2023. Estou constantemente em busca de novos desafios e experiências que possam ampliar 
+                    meu conhecimento e aprimorar minhas habilidades.
+                    Tenho um interesse particular na área de programação de sistemas web, onde possuo proficiência em diversas tecnologias relevantes.</Text><br></br>
             </ContainerText>
         </ContainerSobre>
     );
