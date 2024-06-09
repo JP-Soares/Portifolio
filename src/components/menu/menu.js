@@ -47,7 +47,9 @@ export function Menu(){
                         duration={800}>Sobre Mim</Link>
                 </Li>
                 <Li>
-                    <Link href="#">Meus Projetos</Link>
+                    <Link to="projetos"
+                        smooth={true}
+                        duration="800">Meus Projetos</Link>
                 </Li>
                 <Li>
                     <Link href="#">Contato</Link>
