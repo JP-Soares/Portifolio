@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components"
 import './menu.css'
 
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink} from "react-scroll";
 
 const Ul = styled.ul`
     list-style: none;
@@ -22,7 +22,7 @@ const Li = styled.li`
     }
 `;
 
-const Link = styled(ScrollLink)`
+const MenuLink = styled(ScrollLink)`
     text-decoration: none;
 
 `;
@@ -42,17 +42,19 @@ export function Menu(){
         <Nav>
             <Ul>
                 <Li>
-                    <Link to="sobre"
+                    <MenuLink to="sobre"
                         smooth={true}
-                        duration={800}>Sobre Mim</Link>
+                        duration={800}>Sobre Mim</MenuLink>
                 </Li>
                 <Li>
-                    <Link to="projetos"
+                    <MenuLink to="projetos"
                         smooth={true}
-                        duration="800">Meus Projetos</Link>
+                        duration={800}>Meus Projetos</MenuLink>
                 </Li>
                 <Li>
-                    <Link href="#">Contato</Link>
+                    <MenuLink to="sobre"
+                    smooth={true}
+                    duration={800}>Contato</MenuLink>
                 </Li>
             </Ul>
         </Nav>

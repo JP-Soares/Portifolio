@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Img1 } from '../images.js'
 
 import './header.css';
-import eusorrindo from '../../img/eusorrindo.jpg'
+const eusorrindo = 'http://localhost:3000/static/img/eusorrindo.jpg'
 
 
 const VarHeader = styled.div`

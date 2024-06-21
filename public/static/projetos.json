@@ -1,4 +1,5 @@
-{
-    "id": 1,
-    "url": "../../src/img/logohelpolder"
-}
+[   {
+        "id": 1,
+        "url": "http://localhost:3000/static/img/logohelpolder.png"
+    }
+]
