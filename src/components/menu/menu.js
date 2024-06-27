@@ -15,20 +15,20 @@ const Li = styled.li`
     float: left;
     &:hover{
         // border-bottom: 3px solid #DE70F0;
-        border-bottom: 3px solid #FFFAFA;;
+        border-bottom: 3px solid #FFFAFA;
         border-radius: 5px;
         transition: all 0.3s ease;
-        cursor: pointer; 
+        cursor: pointer;
     }
 `;
 
 const MenuLink = styled(ScrollLink)`
     text-decoration: none;
-
 `;
 
 const Nav = styled.nav`
-    background-color: #A540C8;
+    /*background-color: #A540C8;*/
+    background-color: transparent;
     position: absolute;
     width: 100vw;
     top: 0;

@@ -24,3 +24,19 @@ export const Img2 = styled.img`
     border: 1px solid #DE70F0;
     border-radius: 10px;
 `;
+
+export const Img3 = styled.img`
+    height: 45vh;
+    width: 30vw;
+    margin-top: 15vh;
+    object-fit: cover;
+    margin-left: 10vw;
+    border: 1px solid #DE70F0;
+    border-radius: 10px;
+
+    &:hover{
+        opacity: 0.4;
+        transition: 1.5s;
+        cursor: pointer;
+    }
+`;

@@ -1,29 +1,61 @@
 import { React, useEffect, useState } from "react";
 // import logohelpolder from "../../img/logohelpolder.png"
-import { Img1 } from "../images";
+import { Img3 } from "../images";
 import styled from "styled-components";
 
-const ProjetoContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    background-color: #363636;
-`;
-
+//Container geral dos projetos
 const ContainerProjetos = styled.div`
+    height: 100vh;
     width: 100vw;
     height: 100vh;
-    background-color: #363636;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: #363636;
 `;
 
-const Carousel = styled.div`
-    width: 40vw;
-    height: 70vh;
-    margin-left: 10vw;
+//Container de cada projeto
+const ProjetoContainer = styled.div`
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
+    width: 100vw;
+    padding: 0;
+`;
+
+//Container do carousel
+const Carousel = styled.div`
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+`;
+
+const Text = styled.p`
+    font-size: 20px;
+    color: #FFFAFA;
+    text-align: justify;
+    text-align: left;
+`;
+
+const ContainerText = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 12vw;
+    width: 30vw;
+    padding: 0;
+`;
+
+const Title = styled.p`
+    color: #DE70F0;
+    font-size: 48px;
+    margin-top: 0;
 `;
 
 export function Projetos (){
@@ -40,10 +72,14 @@ export function Projetos (){
         <ContainerProjetos id="projetos">
             <Carousel>
                 {data.map((items) =>{
-                    const {id, url} = items
+                    const {id, url, text} = items
                     return(
                         <ProjetoContainer key={id}>
-                            <Img1 src={url}></Img1>
+                            <Img3 src={url}></Img3>
+                            <ContainerText>
+                                <Title>Projetos:</Title>
+                                <Text>{text}</Text>
+                            </ContainerText>
                         </ProjetoContainer>
                     );
                 })}
