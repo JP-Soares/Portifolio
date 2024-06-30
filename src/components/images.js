@@ -25,18 +25,65 @@ export const Img2 = styled.img`
     border-radius: 10px;
 `;
 
-export const Img3 = styled.img`
+
+
+
+//Imagens dos projetos
+const ContainerImg = styled.div`
+    position: relative;
     height: 45vh;
     width: 30vw;
-    margin-top: 15vh;
-    object-fit: cover;
+    margin-top: 10vh;
     margin-left: 10vw;
-    border: 1px solid #DE70F0;
-    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &:hover{
+    &:hover img {
         opacity: 0.4;
-        transition: 1.5s;
-        cursor: pointer;
     }
 `;
+
+const MsgImg = styled.a`
+    color: #FFFAFA;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    transition: visibility 1.5s ease-in-out;
+
+    ${ContainerImg}:hover & {
+        visibility: visible;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+`;
+
+const Img3 = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+    transition: opacity 0.4s ease;
+`;
+
+
+export const Containerimg3 = ({ img, link}) => {
+    return (
+        <ContainerImg>
+            <Img3 src={img} alt="Imagem do projeto" />
+            <MsgImg href={link} target="_blank">Acessar Projeto!</MsgImg>
+        </ContainerImg>
+    );
+};

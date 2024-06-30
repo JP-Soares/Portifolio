@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 // import logohelpolder from "../../img/logohelpolder.png"
-import { Img3 } from "../images";
+import { Containerimg3 } from "../images";
 import styled from "styled-components";
 
 //Container geral dos projetos
@@ -32,7 +32,7 @@ const Carousel = styled.div`
     height: 70vh;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
 `;
 
@@ -72,10 +72,10 @@ export function Projetos (){
         <ContainerProjetos id="projetos">
             <Carousel>
                 {data.map((items) =>{
-                    const {id, url, text} = items
+                    const {id, url, text, link} = items
                     return(
                         <ProjetoContainer key={id}>
-                            <Img3 src={url}></Img3>
+                            <Containerimg3 img={url} link={link}></Containerimg3>
                             <ContainerText>
                                 <Title>Projetos:</Title>
                                 <Text>{text}</Text>
