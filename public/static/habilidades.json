@@ -48,8 +48,8 @@
     },
 
     {
-        "id": 8,
+        "id": 9,
         "image": "http://localhost:3000/static/img/java-svgrepo-com.svg",
-        "description": "Python"
+        "description": "Java"
     }
 ]

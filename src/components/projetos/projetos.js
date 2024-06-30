@@ -71,8 +71,8 @@ export function Projetos (){
     return(
         <ContainerProjetos id="projetos">
             <Carousel>
-                {data.map((items) =>{
-                    const {id, url, text, link} = items
+                {data.map((projetos) =>{
+                    const {id, url, text, link} = projetos
                     return(
                         <ProjetoContainer key={id}>
                             <Containerimg3 img={url} link={link}></Containerimg3>

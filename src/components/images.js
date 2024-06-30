@@ -87,3 +87,46 @@ export const Containerimg3 = ({ img, link}) => {
         </ContainerImg>
     );
 };
+
+
+
+//Images habilidades
+const ContainerImgHabilidades = styled.div`
+    height: 5vh;
+    width: 5vw;
+`;
+
+const Img4 = styled.img`
+    height: 10vh;
+    width: 10vw;
+
+    &:hover{
+        transition: 0.4s;
+        transform: scale(1.5);
+    }
+`;
+
+//Mensagem da descrição
+const MsgDescription = styled.span`
+    font-size: 16px;
+    color: #FFFAFA;
+    position: relative;
+    left: 10vw;
+    top: -5vh;
+    visibility: hidden;
+    background-color: #363636;
+    font-family: "Chakra Petch", sans-serif;
+
+    ${ContainerImgHabilidades}:hover & {
+        visibility: visible;
+    }
+`;
+
+export const ContainerImg4 = ({id, img, description}) => {
+    return(
+        <ContainerImgHabilidades key={id}>
+            <Img4 src={img}></Img4>
+            <MsgDescription>{description}</MsgDescription>
+        </ContainerImgHabilidades>
+    );
+}
