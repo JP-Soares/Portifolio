@@ -20,13 +20,20 @@ const ContainerImages = styled.div`
     height: 45vh;
     width: 40vw;
     padding: 5vw 5vw 5vw 5vw;
-    margin-left: 25vw;
-    border: 1px solid #DE70F0;
+    margin-left: 15vw;
+    // border: 1px solid #DE70F0;
     display: grid;
     grid-template-columns: 10vw 10vw 10vw;
     grid-gap: 2vw;
     justify-content: center;
     align-items: center;
+`;
+
+const Title = styled.p`
+    color: #DE70F0;
+    font-size: 48px;
+    margin-top: 0;
+    margin-left: 10vw; 
 `;
 
 export function Habilidades(){
@@ -40,7 +47,8 @@ export function Habilidades(){
     if(!data || !data.length) return null;
 
     return(
-        <ContainerHabilidades>
+        <ContainerHabilidades id="habilidades">
+            <Title>Habilidades:</Title>
             <ContainerImages>
                 {data.map((habilidades) => {
                     const {id, image, description} = habilidades

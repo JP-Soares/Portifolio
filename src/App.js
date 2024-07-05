@@ -4,6 +4,7 @@ import {Sobre} from './components/sobre/sobre.js'
 import {Menu} from './components/menu/menu.js'
 import { Projetos } from './components/projetos/projetos.js'
 import { Habilidades } from './components/habilidades/habilidades.js'
+import { Contato } from './components/contato/contato.js'
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Sobre></Sobre>
       <Projetos></Projetos>
       <Habilidades></Habilidades>
+      <Contato></Contato>
     </section>
   );
 }

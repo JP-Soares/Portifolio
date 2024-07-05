@@ -52,6 +52,11 @@ export function Menu(){
                         duration={800}>Meus Projetos</MenuLink>
                 </Li>
                 <Li>
+                    <MenuLink to="habilidades"
+                    smooth={true}
+                    duration={800}>Habilidades</MenuLink>
+                </Li>
+                <Li>
                     <MenuLink to="sobre"
                     smooth={true}
                     duration={800}>Contato</MenuLink>
