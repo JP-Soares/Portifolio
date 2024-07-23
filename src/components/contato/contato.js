@@ -24,6 +24,10 @@ const Title = styled.p`
     font-size: 48px;
     margin-top: 0;
     margin-left: 10vw;
+
+    @media (max-width: 768px){
+        font-size: 24px;
+    }
 `;
 
 const ContainerText = styled.div`
@@ -46,10 +50,10 @@ const Link = styled.a`
 
 export function Contato(){
     return(
-        <ContainerContato>
+        <ContainerContato id="contato">
             <Title>Contato:</Title>
             <ContainerText>
-                <Link href="https://www.linkedin.com/in/jo%C3%Link3o-pedro-soares-da-costa/" target="_blank"><ContainerImg4 key='1' img={imgLinkedin} description="Linkedin"></ContainerImg4></Link>
+                <Link href="https://www.linkedin.com/in/jo%C3%A3o-pedro-soares-da-costa/" target="_blank"><ContainerImg4 key='1' img={imgLinkedin} description="Linkedin"></ContainerImg4></Link>
                 <Link href="https://github.com/JP-Soares" target="_blank"><ContainerImg4 key='1' img={imgGitHub} description="GitHub"></ContainerImg4></Link>
             </ContainerText>
         </ContainerContato>

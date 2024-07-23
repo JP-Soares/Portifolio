@@ -24,6 +24,10 @@ const Li = styled.li`
 
 const MenuLink = styled(ScrollLink)`
     text-decoration: none;
+    
+    @media(max-width: 768px){
+        font-size: 14px;
+    }
 `;
 
 const Nav = styled.nav`
@@ -57,7 +61,7 @@ export function Menu(){
                     duration={800}>Habilidades</MenuLink>
                 </Li>
                 <Li>
-                    <MenuLink to="sobre"
+                    <MenuLink to="contato"
                     smooth={true}
                     duration={800}>Contato</MenuLink>
                 </Li>

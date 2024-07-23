@@ -14,6 +14,10 @@ const ContainerHabilidades = styled.div`
     flex-direction: row;
     align-items: center;
     background-color: #363636;
+
+    @media (max-width: 720px){
+        flex-direction: column;
+    }
 `;
 
 const ContainerImages = styled.div`
@@ -27,13 +31,23 @@ const ContainerImages = styled.div`
     grid-gap: 2vw;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px){
+        margin-left: 5vw;
+        grid-template-columns: 20vw 20vw 20vw;
+    }
 `;
 
 const Title = styled.p`
     color: #DE70F0;
     font-size: 48px;
     margin-top: 0;
-    margin-left: 10vw; 
+    margin-left: 10vw;
+
+    @media (max-width: 768px){
+        font-size: 24px;
+        margin-left: -55vw;
+    }
 `;
 
 export function Habilidades(){

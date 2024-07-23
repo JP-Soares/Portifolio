@@ -12,8 +12,9 @@ const ContainerProjetos = styled.div`
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #363636;
 `;
 
@@ -24,6 +25,10 @@ const ProjetoContainer = styled.div`
     align-items: flex-start;
     width: 100vw;
     padding: 0;
+
+    @media(max-width: 768px){
+        flex-direction: column;
+    }
 `;
 
 //Container do carousel
@@ -34,28 +39,48 @@ const Carousel = styled.div`
     flex-direction: row;
     overflow-x: hidden;
     overflow-y: hidden;
+
+    @media(max-width: 768px){
+       flex-direction: column; 
+    }
 `;
 
 const Text = styled.p`
     font-size: 20px;
     color: #FFFAFA;
     text-align: justify;
-    text-align: left;
+
+    @media(max-width: 768px){
+        font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+        text-align: left; /* Centralizando o texto para telas menores */
+        word-break: break-word;
+    }
 `;
 
 const ContainerText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 12vw;
+    margin-left: 10vw;
     width: 30vw;
     padding: 0;
+
+    @media(max-width: 768px){
+        width: 90vw;
+        margin-left: 5vw;
+    }
 `;
 
 const Title = styled.p`
     color: #DE70F0;
     font-size: 48px;
     margin-top: 0;
+    margin-left: 10vw;
+
+    @media(max-width: 768px){
+        font-size: 24px;
+        margin-left: -65vw;
+    }
 `;
 
 export function Projetos (){
@@ -70,6 +95,7 @@ export function Projetos (){
 
     return(
         <ContainerProjetos id="projetos">
+            <Title>Projetos:</Title>
             <Carousel>
                 {data.map((projetos) =>{
                     const {id, url, text, link} = projetos
@@ -77,7 +103,6 @@ export function Projetos (){
                         <ProjetoContainer key={id}>
                             <Containerimg3 img={url} link={link}></Containerimg3>
                             <ContainerText>
-                                <Title>Projetos:</Title>
                                 <Text>{text}</Text>
                             </ContainerText>
                         </ProjetoContainer>

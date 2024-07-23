@@ -9,9 +9,14 @@ export const Img1 = styled.img`
     margin-left: 30vw;
     border: 1px solid #DE70F0;
 
-    @media (max-width: 720px){
+    @media (max-width: 768px){
         margin-left: 0;
-        margin-right: 1vw;
+        margin-right: 1vw; 
+        height: 20vh;
+        width: 20vh;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
     }
 `;
 
@@ -23,6 +28,10 @@ export const Img2 = styled.img`
     margin-left: 10vw;
     border: 1px solid #DE70F0;
     border-radius: 10px;
+
+    @media (max-width: 768px){
+        display: none;
+    }
 `;
 
 
@@ -33,7 +42,6 @@ const ContainerImg = styled.div`
     position: relative;
     height: 45vh;
     width: 30vw;
-    margin-top: 10vh;
     margin-left: 10vw;
     text-align: center;
     overflow: hidden;
@@ -43,6 +51,12 @@ const ContainerImg = styled.div`
 
     &:hover img {
         opacity: 0.4;
+    }
+
+    @media(max-width: 768px){
+        height: 30vh;
+        width: 90vw;
+        margin-left: 5vw;
     }
 `;
 
@@ -104,6 +118,11 @@ const Img4 = styled.img`
         transition: 0.4s;
         transform: scale(1.5);
     }
+
+    @media (max-width: 768px){
+        height: 15vh;
+        width: 15vw;
+    }
 `;
 
 //Mensagem da descrição
@@ -114,11 +133,16 @@ const MsgDescription = styled.span`
     left: 10vw;
     top: -5vh;
     visibility: hidden;
-    background-color: #363636;
+    // background-color: #363636;
     font-family: "Chakra Petch", sans-serif;
 
     ${ContainerImgHabilidades}:hover & {
         visibility: visible;
+    }
+
+    @media (max-width: 768px){
+        font-size: 12px;
+        left: 15vw;
     }
 `;
 

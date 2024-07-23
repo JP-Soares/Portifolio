@@ -29,7 +29,7 @@ const Title = styled.p`
     font-size: 48px;
 
     @media (max-width: 720px){
-        font-size: 32px;
+        font-size: 20px;
     }
 `;
 
@@ -37,6 +37,10 @@ const SubTitle = styled.p`
     color: #DE70F0;
     font-size: 56px;
     margin-top: 0vh;
+
+    @media (max-width: 720px){
+        font-size: 24px;
+    }
 `;
 
 export function Header(){
@@ -44,7 +48,7 @@ export function Header(){
         <VarHeader>
             <TitleContainer>
                 <Title>João Pedro Soares</Title>
-                <SubTitle>Front-End Developer</SubTitle>
+                <SubTitle>System Developer</SubTitle>
             </TitleContainer>
             <Img1 src={eusorrindo}></Img1>
         </VarHeader>

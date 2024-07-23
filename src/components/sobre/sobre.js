@@ -11,6 +11,10 @@ const ContainerText = styled.div`
     margin-left: 20vw;
     width: 30vw;
     padding: 0;
+    @media (max-width: 768px) {
+        margin-left: 5vw;
+        width: 100vw;
+    }
 `;
 
 const ContainerSobre = styled.div`
@@ -30,13 +34,23 @@ const Title = styled.p`
     color: #DE70F0;
     font-size: 48px;
     margin-top: 0;
+
+    @media(max-width: 768px){
+        font-size: 24px;
+    }
 `;
 
 const Text = styled.p`
     font-size: 20px;
     color: #FFFAFA;
     text-align: justify;
-    text-align: left;
+
+    @media (max-width: 768px) {
+        font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+        text-align: left; /* Centralizando o texto para telas menores */
+        padding: 0 20px; /* Adicionando um espaçamento lateral para evitar que o texto ocupe toda a largura */
+        word-break: break-word;
+    }
 `;
 
 export function Sobre(){
