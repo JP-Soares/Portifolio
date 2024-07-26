@@ -17,6 +17,10 @@ const ContainerContato = styled.div`
     flex-direction: row;
     align-items: center;
     background-color: #363636;
+
+    @media (max-width: 768px){
+        height: 50vh;
+    }
 `;
 
 const Title = styled.p`

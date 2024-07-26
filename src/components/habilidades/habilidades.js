@@ -17,6 +17,7 @@ const ContainerHabilidades = styled.div`
 
     @media (max-width: 720px){
         flex-direction: column;
+        height: 70vh;
     }
 `;
 
