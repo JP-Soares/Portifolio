@@ -88,7 +88,7 @@ export function Projetos (){
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/static/projetos.json').then((response) => response.json()).then(setData).then(console.log)
+        fetch('/static/projetos.json').then((response) => response.json()).then(setData).then(console.log)
     },[])
 
     if(!data || !data.length) return null;
