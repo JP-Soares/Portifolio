@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Img1 } from '../images.js'
 
 import './header.css';
-const eusorrindo = 'http://localhost:3000/static/img/eusorrindo.jpg'
+const eusorrindo = 'https://joaopedrosoares.netlify.app/static/img/eusorrindo.jpg'
 
 
 const VarHeader = styled.div`

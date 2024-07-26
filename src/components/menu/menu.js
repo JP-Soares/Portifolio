@@ -31,9 +31,9 @@ const MenuLink = styled(ScrollLink)`
 `;
 
 const Nav = styled.nav`
-    /*background-color: #A540C8;*/
-    background-color: transparent;
-    position: absolute;
+    background-color: #A540C8;
+    /*background-color: transparent;*/
+    position: fixed;
     width: 100vw;
     top: 0;
     z-index: 999;

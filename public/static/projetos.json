@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "url": "http://localhost:3000/static/img/logohelpolder.png",
+        "url": "https://joaopedrosoares.netlify.app/static/img/logohelpolder.png",
         "text": "Uma plataforma para unir cuidadores de idosos. Esse sistema contará com dicas de tratamentos, sistema de login e cadastro dos cuidadores e dos responsáveis pelos idosos, um sistema de contratação do profissional e avaliação do mesmo. Contudo, a plataforma trará mais profissionalismo e divulgação desse trabalho, consequentemente rapidez para tais tarefas",
         "link": "https://github.com/JP-Soares/TCCTecADS"
     }

@@ -2,7 +2,7 @@ import React from "react";
 import {Img2} from '../images.js';
 import styled from 'styled-components'
 
-const eugenius = 'http://localhost:3000/static/img/eugenius.jpg';
+const eugenius = 'https://joaopedrosoares.netlify.app/static/img/eugenius.jpg';
 
 const ContainerText = styled.div`
     display: flex;

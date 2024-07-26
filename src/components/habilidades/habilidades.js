@@ -55,7 +55,7 @@ export function Habilidades(){
     const [data, setData] = useState([])
 
     useEffect(() =>{
-        fetch('http://localhost:3000/static/habilidades.json').then((response) => response.json()).then(setData)
+        fetch('https://joaopedrosoares.netlify.app/static/habilidades.json').then((response) => response.json()).then(setData)
     },[]);
 
     if(!data || !data.length) return null;
